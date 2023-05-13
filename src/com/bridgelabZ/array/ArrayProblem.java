@@ -14,6 +14,7 @@ public class ArrayProblem {
         }
         printArray(arr, size);
         countFreq(arr, size);
+        largestElement(arr,size);
     }
 
     public static void printArray(int arr[], int size) {
@@ -37,7 +38,17 @@ public class ArrayProblem {
                     count++;
                 }
             }
-            System.out.println(arr[i] + "  " + count);
+            System.out.println(arr[i] + " ==>  " + count);
         }
+    }
+    public static void largestElement(int arr[],int n){
+        int large = arr[0];
+
+        for(int i=0;i< arr.length;i++){
+            if(arr[i]>large){
+                large = arr[i];
+            }
+        }
+        System.out.println("Largest Element in Array is :"+large);
     }
 }
