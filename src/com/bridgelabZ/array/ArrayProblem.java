@@ -15,6 +15,7 @@ public class ArrayProblem {
         printArray(arr, size);
         countFreq(arr, size);
         largestElement(arr,size);
+        smallestElement(arr,size);
     }
 
     public static void printArray(int arr[], int size) {
@@ -50,5 +51,15 @@ public class ArrayProblem {
             }
         }
         System.out.println("Largest Element in Array is :"+large);
+    }
+    public static void smallestElement(int arr[],int n){
+        int small = arr[0];
+
+        for(int i=0;i< arr.length;i++){
+            if(arr[i]<small){
+                small = arr[i];
+            }
+        }
+        System.out.println("Smallest Element in Array is :"+small);
     }
 }
