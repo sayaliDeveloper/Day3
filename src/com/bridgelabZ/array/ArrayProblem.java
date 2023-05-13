@@ -17,6 +17,7 @@ public class ArrayProblem {
         largestElement(arr,size);
         smallestElement(arr,size);
         evenPosition(arr,size);
+        revArray(arr,size);
     }
 
     public static void printArray(int arr[], int size) {
@@ -66,6 +67,12 @@ public class ArrayProblem {
     public static void evenPosition(int arr[],int n) {
         System.out.println("Even Position Elements Present  in Array is ");
         for (int i = 1; i < arr.length; i = i + 2)
+            System.out.print(arr[i] + " ");
+        System.out.println(" ");
+    }
+    public static void revArray(int arr[],int n) {
+        System.out.println("Reverse Element of an Array is : ");
+        for (int i = arr.length-1; i>=0 ;  i--)
             System.out.print(arr[i] + " ");
         System.out.println(" ");
     }
