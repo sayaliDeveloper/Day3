@@ -18,6 +18,7 @@ public class ArrayProblem {
         smallestElement(arr,size);
         evenPosition(arr,size);
         revArray(arr,size);
+        oddPosition(arr,size);
     }
 
     public static void printArray(int arr[], int size) {
@@ -73,6 +74,13 @@ public class ArrayProblem {
     public static void revArray(int arr[],int n) {
         System.out.println("Reverse Element of an Array is : ");
         for (int i = arr.length-1; i>=0 ;  i--)
+            System.out.print(arr[i] + " ");
+        System.out.println(" ");
+    }
+
+    public static void oddPosition(int arr[],int n) {
+        System.out.println("Odd Position Elements Present  in Array are : ");
+        for (int i = 0; i < arr.length; i = i + 2)
             System.out.print(arr[i] + " ");
         System.out.println(" ");
     }
