@@ -68,8 +68,5 @@ public class ArrayProblem {
         for (int i = 1; i < arr.length; i = i + 2)
             System.out.print(arr[i] + " ");
         System.out.println(" ");
-
-
-
     }
 }
