@@ -21,6 +21,7 @@ public class ArrayProblem {
         oddPosition(arr,size);
         duplicateEle(arr,size);
         sortArray(arr,size);
+        secondLarge(arr,size);
     }
 
     public static void printArray(int arr[], int size) {
@@ -110,8 +111,26 @@ public class ArrayProblem {
             }
         }
         System.out.println("Ascending order Elements oof Array are: ");
-        printArray(arr,n);
+        for (int i = 0; i < arr.length; i++)
+            System.out.print(arr[i] + " ");
+        System.out.println(" ");
+
     }
 
+    public static void secondLarge(int arr[],int n) {
+        int temp;
 
+        for(int i = 0; i < arr.length; i++) {
+            for(int j = i + 1; j < arr.length; j++) {
+                if(arr[i]<arr[j]){
+                    temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+
+            }
+        }
+        System.out.println("Second Largest  Elements of Array is: "+arr[1]);
+
+    }
 }
