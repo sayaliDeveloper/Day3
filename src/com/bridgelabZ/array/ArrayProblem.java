@@ -16,13 +16,14 @@ public class ArrayProblem {
         countFreq(arr, size);
         largestElement(arr,size);
         smallestElement(arr,size);
+        evenPosition(arr,size);
     }
 
     public static void printArray(int arr[], int size) {
         System.out.println("Array Elements are :");
         for (int i = 0; i < size; i++)
             System.out.print(arr[i] + " ");
-        System.out.println("");
+        System.out.println(" ");
     }
 
     public static void countFreq(int arr[], int n) {
@@ -61,5 +62,14 @@ public class ArrayProblem {
             }
         }
         System.out.println("Smallest Element in Array is :"+small);
+    }
+    public static void evenPosition(int arr[],int n) {
+        System.out.println("Even Position Elements Present  in Array is ");
+        for (int i = 1; i < arr.length; i = i + 2)
+            System.out.print(arr[i] + " ");
+        System.out.println(" ");
+
+
+
     }
 }
